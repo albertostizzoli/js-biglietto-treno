@@ -13,7 +13,7 @@ console.log('Numero di chilometri', km ,'Età', età);
 //Condizioni
 
 if(isNaN(età) || isNaN(km)){
-    mioDiv.innerHTML = 'Devi inserire dei numeri!';
+    mioDiv.innerHTML = 'Devi inserire dei numeri!'
     location.reload();
 }
 
