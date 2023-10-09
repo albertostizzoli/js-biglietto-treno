@@ -18,10 +18,10 @@ if(isNaN(età) || isNaN(km)){
 }
 
 if(età >= 65){
-    let discount = km * prezzo * 0.6;
+    let discount = km * prezzo * 0.4;
     mioDiv.innerHTML = 'Costo del biglietto = ' + discount.toFixed(2);
 } else if(età < 18){
-    let discount_2 = km * prezzo * 0.8;
+    let discount_2 = km * prezzo * 0.2;
     mioDiv.innerHTML = 'Costo del biglietto = ' + discount_2.toFixed(2);
 } else{
     let nodiscount = km * prezzo;
