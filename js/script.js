@@ -1,23 +1,29 @@
+let mioDiv = document.getElementById('text');
+console.dir(mioDiv);
+
+
 // Variabili
 
-const cost = 0.21;
-let age = prompt('Inserisci gli anni');
-let age_2 = prompt('Inserisci la seconda età');
-let km = prompt('Inserisci i km da percorrere');
+let prezzo = 0.21;
+let età = parseInt(prompt('Età'));
+let km = parseInt(prompt('Numero di chilometri'));
 
-console.log(age);
-console.log(age_2);
-console.log(km);
+console.log('Numero di chilometri', km ,'Età', età);
 
 //Condizioni
 
-if(isNaN(age) || isNaN(age_2) || isNaN(km)){
+if(isNaN(età) || isNaN(km)){
     window.location.reload();
 }
 
-if(age < age_2){
-    
+if(età >= 65){
+    let discount = km * prezzo * 0.6
+    mioDiv.innerHTML= discount;
+} else if(età < 18){
+    let discount_2 = km * prezzo * 0.8
+    mioDiv.innerHTML= discount_2;
 }
+
 
 
 
