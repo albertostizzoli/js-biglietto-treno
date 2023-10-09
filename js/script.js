@@ -22,7 +22,7 @@ if(età >= 65){
 } else if(età < 18){
     let discount_2 = km * prezzo * 0.8
     mioDiv.innerHTML= discount_2;
-}
+} 
 
 
 
